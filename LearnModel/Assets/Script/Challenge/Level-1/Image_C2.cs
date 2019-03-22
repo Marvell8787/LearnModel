@@ -23,10 +23,29 @@ public class Image_C2 : MonoBehaviour {
     }
     public void Click()
     {
-        Audiosource_1.Play();
-        Debug.Log("get");
-
-
+        switch (Level_1.Answer[1])
+        {
+            case "Goodbye":
+                Audiosource_1.Play();
+                break;
+            case "Hi":
+                Audiosource_2.Play();
+                break;
+            case "How are you":
+                Audiosource_3.Play();
+                break;
+            case "Let's go":
+                Audiosource_4.Play();
+                break;
+            case "Thank you":
+                Audiosource_5.Play();
+                break;
+            case "You're welcome":
+                Audiosource_6.Play();
+                break;
+            default:
+                break;
+        }
     }
 
 }
