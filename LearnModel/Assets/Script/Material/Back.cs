@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class V1 : MonoBehaviour {
+public class Back : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,4 +13,8 @@ public class V1 : MonoBehaviour {
 	void Update () {
 		
 	}
+    public void Click()
+    {
+        Application.LoadLevel("Learn");
+    }
 }
