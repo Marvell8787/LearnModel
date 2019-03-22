@@ -24,6 +24,7 @@ public class Button_Check3 : MonoBehaviour {
             Level_1.Wrong++;
         }
         Debug.Log(Level_1.Right + " " + Level_1.Wrong);
+        Level_1.QuestionNum++;
         Level_1.Refresh();
     }
 }
