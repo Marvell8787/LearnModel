@@ -14,7 +14,7 @@ public class Level_Canvas : MonoBehaviour {
     void Start () {
         Random.seed = System.Guid.NewGuid().GetHashCode();
 
-        RandomSequence = GetRandomSequence(Num);
+        RandomSequence = Level_1.GetRandomSequence(Num);
         Data =materials.materials_Data;
         for (int i = 0; i < 6; i++)
         {
@@ -51,9 +51,7 @@ public class Level_Canvas : MonoBehaviour {
             temp = output[i];
             output[i] = output[r];
             output[r] = temp;
-
         }
-
         return output;
     }
 
